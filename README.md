@@ -1,6 +1,8 @@
-# DTDD - dave_tucker does dotfiles
+# KFRD - KFR dotfiles
 
 ## Dotfiles
+
+Here be dragons. These files will modify a lot of your system, so familiarize yourself with the files before you run anything!
 
 Dotfiles are all those `.` files that sit in your `~` and customize your system. Here are mine.
 I've gone one step further than just including my dotfiles. I've also included all of my system customizations and installers for the packages I use most. Why a new repository and not a fork you might ask? The honest answer is that there wasn't one repo that fit my tastes well enough so I ended up taking what I considered to be the "best" elements from a number of other repos.
@@ -64,5 +66,5 @@ What I like about my dotfiles:
 
 ## License
 
-Copyright 2014 Dave Tucker
+Copyright 2015 Kim Rejstrom
 Licensed under the MIT License
