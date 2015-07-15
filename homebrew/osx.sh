@@ -24,95 +24,71 @@ TAPS=(
     homebrew/versions
     caskroom/cask
     caskroom/versions
+    caskroom/fonts
 )
 
 FORMULAS=(
-    android-sdk
-    ant
     autoconf
     automake
-    boot2docker
     caskroom/cask/brew-cask
     coreutils
-    ctags
-    docker
-    erlang
-    go
-    grc
-    homebrew/versions/maven30
-    memcached
+    maven
     mercurial
-    packer
-    pkg-config
-    pyenv
+    node
+    openssl
     python
-    python3
-    rbenv
-    ruby-build
-    sbt
-    scala
-    spark
+    optipng
+    wget
+    zsh
+)
+
+FONTS=(
+  font-source-code-pro-for-powerline
+  font-source-code-pro
+  font-roboto
 )
 
 CASKS=(
+    airfoil
     alfred
-    arduino
-    audio-hijack-pro
-    bartender
+    automatic
     bettertouchtool
     caffeine
-    choosy
+    ccleaner
+    crashplan
     dash
-    devonthink-pro
     dropbox
-    fantastical
     firefox
-    fluid
     flux
-    gimp
     google-chrome
     google-drive
     google-hangouts
-    gpgtools
-    graphsketcher
-    hazel
-    induction
+    google-photos-backup
     intellij-idea-community-eap
-    istat-menus
     iterm2
-    keyboard-maestro
-    mailmate
-    marked
-    node
-    nvalt
-    omnigraffle
-    omnioutliner
-    omnipresence
-    onepassword
-    osxfuse
-    p4merge
-    pandoc
-    postgres
-    rdm
+    lastpass
+    music-manager
+    qlcolorcode
+    qlimagesize
+    qlmarkdown
+    qlprettypatch
+    qlstephen
+    quicklook-csv
+    quicklook-json
     robomongo
-    screenflow
-    scrivener
-    sequel-pro
-    sketch
+    skitch
     skype
+    slack
     sourcetree
     spotify
+    steam
     sublime-text3
-    textexpander
     the-unarchiver
-    tower
-    transmit
-    ubersicht
-    utorrent
+    transmission
     vagrant
     virtualbox
-    visualvm
     vlc
+    webpquicklook
     wireshark
     xquartz
 )
@@ -126,12 +102,14 @@ brew install ${FORMULAS[@]}
 
 brew update
 
-brew cask install ${CASKS[@]}
+brew cask install --appdir="/Applications" ${CASKS[@]}
 
 brew cask alfred link
 
+brew cask install ${FONTS[@]}
+
 # Special cases that need flags...
-brew install macvim --with-cscope --with-lua --HEAD
+brew install macvim --env-std --override-system-vim --with-cscope --with-lua --HEAD
 brew install vim --with-lua
 brew linkapps macvim
 

@@ -1,30 +1,53 @@
 {
     "user": {
-        "debug": false,
+        "debug": true,
         "delay": 0.25,
-        "error_color": "D02000",
-        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Blueberry/cross/cross.gutter-theme",
+        "error_color": "4b4f52",
+        "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
         "gutter_theme_excludes": [],
         "lint_mode": "background",
         "linters": {
-            "flake8": {
+            "annotations": {
                 "@disable": false,
                 "args": [],
-                "builtins": "",
+                "errors": [
+                    "FIXME"
+                ],
+                "excludes": [],
+                "warnings": [
+                    "TODO",
+                    "README"
+                ]
+            },
+            "csslint": {
+                "@disable": false,
+                "args": [],
+                "errors": "",
                 "excludes": [],
                 "ignore": "",
-                "max-complexity": -1,
-                "max-line-length": null,
-                "select": ""
+                "warnings": ""
             },
-            "ruby": {
+            "jshint": {
                 "@disable": false,
                 "args": [],
                 "excludes": []
+            },
+            "php": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
+            "scss": {
+                "@disable": false,
+                "args": [],
+                "exclude-linter": "",
+                "excludes": [],
+                "include-linter": ""
             }
         },
-        "mark_style": "outline",
+        "mark_style": "solid underline",
         "no_column_highlights_line": false,
+        "passive_warnings": false,
         "paths": {
             "linux": [],
             "osx": [],
@@ -46,7 +69,7 @@
             "php": "html",
             "python django": "python"
         },
-        "warning_color": "DDB700",
+        "warning_color": "beb9c1",
         "wrap_find": true
     }
 }

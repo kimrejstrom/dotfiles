@@ -2,7 +2,7 @@
 
 ## Dotfiles
 
-Here be dragons. These files will modify a lot of your system, so familiarize yourself with the files before you run anything!
+Here be dragons. These files will modify parts of your system, so familiarize yourself with the files before you run anything!
 
 Dotfiles are all those `.` files that sit in your `~` and customize your system. Here are mine.
 I've gone one step further than just including my dotfiles. I've also included all of my system customizations and installers for the packages I use most. Why a new repository and not a fork you might ask? The honest answer is that there wasn't one repo that fit my tastes well enough so I ended up taking what I considered to be the "best" elements from a number of other repos.
@@ -27,19 +27,17 @@ What I like about my dotfiles:
 - Base16-Ocean colors for IntelliJ (and other IDEA IDE's)
 - Base16-Ocean iTerm2 colors
 - Vain Hacker defaults for OSX (hacker defaults + eye candy)
-- My Python settings
-    + Pip install useful packages
-    + Python dotfiles
-- Some sensible Ruby settings
 - Sublime Text
     + Spacegray theme and Base16-Ocean Colors
     + Package Control and a lot of plugins
-    + Customizations for Python development
 - Vim
     + Base 16 Ocean colors
     + A very basic vimrc
 
 # Installation
+
+    # install x-code
+    xcode-select --install
 
     # install cross-platform things and dotfiles
     make
@@ -50,7 +48,7 @@ What I like about my dotfiles:
     # install os-specific things
     make mac | linux | windows
 
-> If you are planning on using this you will want to `s/dave_tucker/<your_username>` and `s/Dave Tucker/<your_name`. Also, you should change `DEFAULT_USER` and `PROJECTS` in `zshrc`
+> If you are planning on using this you will want to `s/kim_rejstrom/<your_username>` and `s/Kim Rejstrom/<your_name`. Also, you should change `DEFAULT_USER` and `PROJECTS` in `zshrc`
 
 ## Thanks
 

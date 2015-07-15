@@ -37,6 +37,7 @@ Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'SirVer/ultisnips'
+Plugin 'Powerline/powerline'
 
 if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
@@ -45,12 +46,14 @@ if iCanHazVundle == 0
 endif
 " Setting up Vundle - the vim plugin bundler end
 
-" golang
-filetype off
-filetype plugin indent off
-set rtp+=$GOROOT/misc/vim
-filetype plugin indent on
-syntax on
+" Powerline
+set guifont=Ubuntu\ Mono\ derivative\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
 
 " color scheme
 set background=dark
@@ -60,4 +63,11 @@ colorscheme base16-ocean
 " airline
 set laststatus=2
 let g:airline_powerline_fonts=1
+
+if has("gui_running")
+   let s:uname = system("uname")
+   if s:uname == "Darwin\n"
+      set guifont=Ubuntu\ Mono\ derivative\ for\ Powerline:h15
+   endif
+endif
 

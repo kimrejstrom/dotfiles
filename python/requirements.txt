@@ -1,12 +1,3 @@
 distribute
-flake8
-Django
-django-compressor
-gunicorn
-ipython
-requests
-pep8
-pyflakes
-pylint
-selenium
-virtualenv
+mercurial
+pygments
