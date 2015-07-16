@@ -36,6 +36,7 @@ FORMULAS=(
     mercurial
     node
     openssl
+    osxfuse
     python
     optipng
     wget
