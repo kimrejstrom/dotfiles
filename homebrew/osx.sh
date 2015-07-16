@@ -63,7 +63,6 @@ CASKS=(
     google-drive
     google-hangouts
     google-photos-backup
-    intellij-idea-community-eap
     iterm2
     lastpass
     music-manager
@@ -104,11 +103,15 @@ brew install ${FORMULAS[@]}
 
 brew cask install --appdir="/Applications" ${CASKS[@]}
 
-#brew cask install ${FONTS[@]}
+brew cask install ${FONTS[@]}
 
 # Special cases that need flags...
-#brew install macvim --env-std --override-system-vim --with-cscope --with-lua --HEAD
+brew install macvim --env-std --override-system-vim --with-cscope --with-lua --HEAD
 
-#brew linkapps macvim
+brew linkapps macvim
 
-#brew cleanup
+brew cleanup
+
+brew-cask cleanup
+
+exit
