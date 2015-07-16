@@ -32,7 +32,6 @@ FORMULAS=(
     automake
     caskroom/cask/brew-cask
     coreutils
-    maven
     mercurial
     node
     openssl
