@@ -35,7 +35,6 @@ FORMULAS=(
     mercurial
     node
     openssl
-    osxfuse
     python
     optipng
     wget
@@ -68,6 +67,7 @@ CASKS=(
     iterm2
     lastpass
     music-manager
+    osxfuse
     qlcolorcode
     qlimagesize
     qlmarkdown
