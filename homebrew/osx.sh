@@ -89,8 +89,8 @@ CASKS=(
     virtualbox
     vlc
     webpquicklook
-    wireshark
     xquartz
+    wireshark
 )
 
 for tap in ${TAPS[@]}
@@ -100,19 +100,15 @@ done
 
 brew install ${FORMULAS[@]}
 
-brew update
+#brew update
 
 brew cask install --appdir="/Applications" ${CASKS[@]}
 
-brew cask alfred link
-
-brew cask install ${FONTS[@]}
+#brew cask install ${FONTS[@]}
 
 # Special cases that need flags...
-brew install macvim --env-std --override-system-vim --with-cscope --with-lua --HEAD
-brew install vim --with-lua
-brew linkapps macvim
+#brew install macvim --env-std --override-system-vim --with-cscope --with-lua --HEAD
 
-brew cleanup
+#brew linkapps macvim
 
-exit 0
+#brew cleanup

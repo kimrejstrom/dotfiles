@@ -12,10 +12,10 @@ ZSH_THEME="agnoster"
 DEFAULT_USER="kimrejstrom"
 
 # Base16 Shell
-BASE16_SHELL="$PROJECTS/dotfiles/zsh/base16-ocean.dark.sh"
+BASE16_SHELL="$PROJECTS/my-dotfiles/zsh/base16-ocean.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
-export ZSH_CUSTOM=$PROJECTS/dotfiles/zsh
+export ZSH_CUSTOM=$PROJECTS/my-dotfiles/zsh
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -73,3 +73,4 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Load Aliases [ -r "$PROJECTS/my-dotfiles/zsh/aliases.zsh" ] && source "$PROJECTS/my-dotfiles/zsh/aliases.zsh"

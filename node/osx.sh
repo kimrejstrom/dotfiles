@@ -1,7 +1,8 @@
 #!/bin/bash
 
     # Check for npm
-    if type_exists 'npm'; then
+    if test ! $(which npm)
+	then
         e_header "Installing Node.js packages..."
 
         # List of npm packages
