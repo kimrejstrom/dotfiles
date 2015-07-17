@@ -1,20 +1,17 @@
 #!/bin/bash
 
     # Check for npm
-    if test ! $(which npm)
-	then
-        e_header "Installing Node.js packages..."
+    which -s npm
+    if [[ $? != 0 ]] ; then
 
-        # List of npm packages
-        local packages="bower csslint grunt-cli gulp gify jshint yo"
+        printf "Aborting (no npm found)...\n"
+        exit
+
+    else
+       printf "Installing Node.js packages..."
 
         # Install packages globally and quietly
-        npm install $packages --global --quiet
+        npm install bower csslint grunt-cli gulp gify jshint yo --global --quiet
 
-        [[ $? ]] && e_success "Done"
-    else
-        printf "\n"
-        e_error "Error: npm not found."
-        printf "Aborting...\n"
-        exit
+        printf "Done"
     fi

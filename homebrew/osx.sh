@@ -48,6 +48,7 @@ FONTS=(
 )
 
 CASKS=(
+    java
     airfoil
     alfred
     automatic

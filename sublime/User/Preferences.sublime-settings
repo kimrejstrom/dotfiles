@@ -16,7 +16,7 @@
 		"*.pyc"
 	],
 	"find_selected_text": true,
-	"font_face": "Ubuntu Mono",
+	"font_face": "Source Code Pro",
 	"font_options":
 	[
 		"subpixel_antialias",

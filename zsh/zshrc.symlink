@@ -73,4 +73,9 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Load Aliases [ -r "$PROJECTS/my-dotfiles/zsh/aliases.zsh" ] && source "$PROJECTS/my-dotfiles/zsh/aliases.zsh"
+# Load Aliases
+[ -r "$PROJECTS/my-dotfiles/zsh/aliases.zsh" ] && source "$PROJECTS/my-dotfiles/zsh/aliases.zsh"
+
+# Enable z
+. $HOME/.oh-my-zsh/plugins/z/z.sh
+

@@ -1,8 +1,8 @@
 # Borrowed from https://github.com/matthewmccullough/dotfiles/
 
 [user]
-  name = Kim Rejström
-  email = mr.rejstrom@gmail.com
+	name = Kim Rejström
+	email = mr.rejstrom@gmail.com
 
 [color]
 # ui = true is a superset of all the more specific color options
@@ -31,8 +31,14 @@
   #untracked = cyan
 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/kimrejstrom/.gitignore_global
   quotepath = false
   autocrlf = input
   safecrlf = warn
   editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.2/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

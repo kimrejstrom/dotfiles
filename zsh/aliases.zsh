@@ -10,6 +10,7 @@ alias vhalt="vagrant halt"
 alias vkill="vagrant destroy"
 alias vssh="vagrant ssh"
 
+alias cat="colorize"
 # ---- FANCY DOTFILES-IMPORTED ALIASES ----------------
 
 # Gzip-enabled `curl`

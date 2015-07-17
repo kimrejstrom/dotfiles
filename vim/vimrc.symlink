@@ -27,7 +27,7 @@ endif
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-    
+
 Plugin 'gmarik/vundle'
 Plugin 'chriskempson/base16-vim'
 Plugin 'fatih/vim-go'
@@ -47,7 +47,7 @@ endif
 " Setting up Vundle - the vim plugin bundler end
 
 " Powerline
-set guifont=Ubuntu\ Mono\ derivative\ for\ Powerline:h15
+set guifont=Source\ Code\ Pro\ for\ Powerline:h15
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256
@@ -67,7 +67,7 @@ let g:airline_powerline_fonts=1
 if has("gui_running")
    let s:uname = system("uname")
    if s:uname == "Darwin\n"
-      set guifont=Ubuntu\ Mono\ derivative\ for\ Powerline:h15
+      set guifont=Source\ Code\ Pro\ for\ Powerline:h15
    endif
 endif
 
