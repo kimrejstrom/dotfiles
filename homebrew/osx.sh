@@ -53,7 +53,6 @@ CASKS=(
     alfred
     automatic
     bettertouchtool
-    caffeine
     ccleaner
     crashplan
     dash
@@ -65,6 +64,7 @@ CASKS=(
     google-hangouts
     google-photos-backup
     iterm2
+    keepingyouawake
     lastpass
     music-manager
     osxfuse

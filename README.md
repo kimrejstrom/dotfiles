@@ -19,12 +19,10 @@ What I like about my dotfiles:
     + Agnoster theme
     + Base 16 Ocean Shell Color Fix
     + Any `.zsh` file in the dotfiles project is included in zshrc
-- Ubuntu Mono fonts (vanilla and powerline modded)
-- A massive gitconfig
-- Homebrew 
+- Source Code Pro fonts (vanilla and powerline modded)
+- Homebrew
     + Installs Homebrew AND `brew install`'s all of my favourite packages
     + Uses `homebrew-cask` to install all my applications
-- Base16-Ocean colors for IntelliJ (and other IDEA IDE's)
 - Base16-Ocean iTerm2 colors
 - Vain Hacker defaults for OSX (hacker defaults + eye candy)
 - Sublime Text
