@@ -1,6 +1,6 @@
 {
 	"installed_packages":
-	[	
+	[
 		"All Autocomplete",
 		"Base16 Color Schemes",
 		"Bootstrap 3 Snippets",
@@ -17,7 +17,7 @@
 		"jQuery",
 		"Keymaps",
 		"Laravel Blade Highlighter",
-		"Markdown Extended",
+		"MarkdownEditing",
 		"Markdown Preview",
 		"Minifier",
 		"Package Control",
