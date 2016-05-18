@@ -70,6 +70,14 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# VirtualEnvs
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Development
+source /usr/local/bin/virtualenvwrapper.sh
+
+# Python
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
@@ -79,3 +87,8 @@ fi
 # Enable z
 . $HOME/.oh-my-zsh/plugins/z/z.sh
 
+# Locale settings
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

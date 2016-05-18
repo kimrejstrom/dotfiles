@@ -2,6 +2,9 @@
 alias refresh='source ~/.zshrc; echo "Reloaded .zshrc."'
 alias artisan='php artisan'
 alias oo='open .'
+alias activity='hg activity --mode=gui'
+alias kwmon='brew services start kwm'
+alias kwmoff='brew services stop kwm'
 
 # Vagrant
 alias vup="vagrant up"
@@ -9,6 +12,10 @@ alias vsus="vagrant suspend"
 alias vhalt="vagrant halt"
 alias vkill="vagrant destroy"
 alias vssh="vagrant ssh"
+
+# MySQL
+alias mysqlstart="/usr/local/bin/mysql.server start"
+alias mysqlstop="/usr/local/bin/mysql.server stop"
 
 alias cat="colorize"
 # ---- FANCY DOTFILES-IMPORTED ALIASES ----------------
@@ -80,7 +87,7 @@ alias fuck='sudo $(fc -ln -1)'
 function toggleiTerm() {
 	pb='/usr/libexec/PlistBuddy'
 	iTerm='/Applications/iTerm.app/Contents/Info.plist'
-	
+
 	echo "Do you wish to hide iTerm in Dock?"
 	select ync in "Hide" "Show" "Cancel"; do
 	    case $ync in
@@ -99,4 +106,12 @@ function toggleiTerm() {
 			;;
 	    esac
 	done
+}
+
+function weather() {
+  curl "http://wttr.in/${1-}";
+}
+
+setWallpaper() {
+  sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '${1-}'" && killall Dock;
 }

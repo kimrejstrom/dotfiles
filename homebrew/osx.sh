@@ -31,10 +31,14 @@ FORMULAS=(
     autoconf
     automake
     caskroom/cask/brew-cask
+    composer
     coreutils
     mercurial
+    mongodb
+    mysql
     node
     openssl
+    postgresql
     python
     optipng
     wget
@@ -52,7 +56,6 @@ CASKS=(
     airfoil
     alfred
     automatic
-    bettertouchtool
     ccleaner
     crashplan
     dash
@@ -66,6 +69,7 @@ CASKS=(
     iterm2
     keepingyouawake
     lastpass
+    liteicon
     music-manager
     osxfuse
     qlcolorcode
@@ -80,6 +84,7 @@ CASKS=(
     skype
     slack
     sourcetree
+    spectacle
     spotify
     steam
     sublime-text3
