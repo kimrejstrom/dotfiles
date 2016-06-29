@@ -7,6 +7,9 @@ plugin_directories: ['.scss-linters']
 # installed)
 plugin_gems: []
 
+# Default severity of all linters.
+severity: warning
+
 linters:
   BangFormat:
     enabled: true
@@ -21,14 +24,18 @@ linters:
     enabled: true
     convention: zero # or `none`
 
+  ChainedClasses:
+    enabled: false
+
   ColorKeyword:
     enabled: true
 
   ColorVariable:
-    enabled: true
+    enabled: false
 
   Comment:
     enabled: true
+    style: silent
 
   DebugStatement:
     enabled: true
@@ -61,7 +68,7 @@ linters:
     present: true
 
   HexLength:
-    enabled: true
+    enabled: false
     style: short # or 'long'
 
   HexNotation:
@@ -75,7 +82,7 @@ linters:
     enabled: true
 
   ImportantRule:
-    enabled: true
+    enabled: false
 
   ImportPath:
     enabled: true
@@ -86,11 +93,11 @@ linters:
     enabled: true
     allow_non_nested_indentation: false
     character: space # or 'tab'
-    width: 4
+    width: 2
 
   LeadingZero:
     enabled: true
-    style: exclude_zero # or 'include_zero'
+    style: include_zero # or 'exclude_zero'
 
   MergeableSelector:
     enabled: true
@@ -103,26 +110,28 @@ linters:
 
   NestingDepth:
     enabled: true
-    max_depth: 3
+    max_depth: 4
     ignore_parent_selectors: false
 
   PlaceholderInExtend:
-    enabled: true
+    enabled: false
+
+  PrivateNamingConvention:
+    enabled: false
+    prefix: _
 
   PropertyCount:
-    enabled: false
+    enabled: true
     include_nested: false
     max_properties: 10
 
   PropertySortOrder:
     enabled: false
-    ignore_unspecified: false
-    min_properties: 2
-    separate_groups: false
 
   PropertySpelling:
     enabled: true
     extra_properties: []
+    disabled_properties: []
 
   PropertyUnits:
     enabled: true
@@ -136,6 +145,9 @@ linters:
       'dpi', 'dpcm', 'dppx',                   # Resolution
       '%']                                     # Other
     properties: {}
+
+  PseudoElement:
+    enabled: true
 
   QualifyingElement:
     enabled: true
@@ -164,6 +176,7 @@ linters:
 
   SpaceAfterComma:
     enabled: true
+    style: one_space # or 'no_space', or 'at_least_one_space'
 
   SpaceAfterPropertyColon:
     enabled: true
@@ -172,8 +185,16 @@ linters:
   SpaceAfterPropertyName:
     enabled: true
 
+  SpaceAfterVariableColon:
+    enabled: false
+    style: one_space # or 'no_space', 'at_least_one_space' or 'one_space_or_newline'
+
   SpaceAfterVariableName:
     enabled: true
+
+  SpaceAroundOperator:
+    enabled: true
+    style: one_space # or 'at_least_one_space', or 'no_space'
 
   SpaceBeforeBrace:
     enabled: true
@@ -195,6 +216,9 @@ linters:
     enabled: true
 
   TrailingZero:
+    enabled: false
+
+  TransitionAll:
     enabled: false
 
   UnnecessaryMantissa:

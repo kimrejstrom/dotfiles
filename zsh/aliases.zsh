@@ -5,6 +5,7 @@ alias oo='open .'
 alias activity='hg activity --mode=gui'
 alias kwmon='brew services start kwm'
 alias kwmoff='brew services stop kwm'
+alias hist='history | grep'
 
 # Vagrant
 alias vup="vagrant up"

@@ -11,7 +11,7 @@
        printf "Installing Node.js packages..."
 
         # Install packages globally and quietly
-        npm install bower csslint grunt-cli gulp gify jshint yo --global --quiet
+        npm install bower csslint grunt-cli gulp gify js-beautify jshint ngrok yo --global --quiet
 
         printf "Done"
     fi
