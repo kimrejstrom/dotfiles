@@ -10,7 +10,7 @@ I've gone one step further than just including my dotfiles. I've also included a
 What I like about my dotfiles:
 
 - Uses the [Base16 Ocean theme](https://github.com/chriskempson/base16)
-- Nicely Organised
+- Nicely Organized
 - Multi-Platform MakeFile-based installer
 
 # What's included
@@ -21,12 +21,12 @@ What I like about my dotfiles:
     + Any `.zsh` file in the dotfiles project is included in zshrc
 - Source Code Pro fonts (vanilla and powerline modded)
 - Homebrew
-    + Installs Homebrew AND `brew install`'s all of my favourite packages
+    + Installs Homebrew AND `brew install`'s all of my favorite packages
     + Uses `homebrew-cask` to install all my applications
 - Base16-Ocean iTerm2 colors
 - Vain Hacker defaults for OSX (hacker defaults + eye candy)
 - Sublime Text
-    + Spacegray theme and Base16-Ocean Colors
+    + SpaceGray theme and Base16-Ocean Colors
     + Package Control and a lot of plugins
 - Vim
     + Base 16 Ocean colors
@@ -62,5 +62,5 @@ What I like about my dotfiles:
 
 ## License
 
-Copyright 2015 Kim Rejstrom
+Copyright 2016 Kim Rejstrom
 Licensed under the MIT License

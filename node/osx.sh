@@ -11,7 +11,7 @@
        printf "Installing Node.js packages..."
 
         # Install packages globally and quietly
-        npm install bower csslint grunt-cli gulp gify js-beautify jshint ngrok yo --global --quiet
+        npm install bower cordova eclint editorconfig-tools eslint gify grunt-cli gulp ionic ios-deploy ios-sim js-beautify jshint ngrok yo --global --quiet
 
         printf "Done"
     fi

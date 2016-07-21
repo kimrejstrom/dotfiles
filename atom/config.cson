@@ -56,6 +56,8 @@
       "markdown-preview"
       "minimap"
       "project-manager"
+      "linter-jshint"
+      "linter-codeclimate"
     ]
     ignoredNames: [
       ".DS_Store"
@@ -81,15 +83,16 @@
   "highlight-selected":
     highlightBackground: true
     lightTheme: true
-  jshint:
-    validateOnlyOnSave: true
   linter:
     lintOnFly: false
-  "linter-jshint":
-    executablePath: "/usr/local/bin/jshint"
-    lintInlineJavaScript: true
+  "linter-eslint":
+    eslintrcPath: "/Users/kimrejstrom/.eslintrc"
+    globalNodePath: "/usr/local"
   "linter-php":
     executablePath: "/usr/local/bin/php"
+  "linter-phpmd":
+    executablePath: "/usr/local/bin/phpmd"
+    rulesets: "cleancode,codesize,design,naming,unusedcode"
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
   "markdown-preview":

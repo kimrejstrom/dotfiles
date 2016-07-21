@@ -33,14 +33,18 @@ FORMULAS=(
     caskroom/cask/brew-cask
     composer
     coreutils
+    kwm
+    lua
     mercurial
     mongodb
+    mpv
     mysql
     node
     openssl
+    optipng
     postgresql
     python
-    optipng
+    screenfetch
     wget
     zsh
 )
@@ -55,6 +59,7 @@ CASKS=(
     java
     airfoil
     alfred
+    atom
     automatic
     ccleaner
     crashplan
@@ -68,7 +73,6 @@ CASKS=(
     google-photos-backup
     iterm2
     keepingyouawake
-    lastpass
     liteicon
     music-manager
     osxfuse
@@ -87,7 +91,7 @@ CASKS=(
     spectacle
     spotify
     steam
-    sublime-text3
+    texmaker
     the-unarchiver
     transmission
     vagrant

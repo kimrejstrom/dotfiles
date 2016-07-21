@@ -1,3 +1,4 @@
+ansible
 distribute
 mercurial
 pygments
