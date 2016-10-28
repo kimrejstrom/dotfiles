@@ -33,6 +33,7 @@ FORMULAS=(
     caskroom/cask/brew-cask
     composer
     coreutils
+    htop
     kwm
     lua
     mercurial
@@ -50,20 +51,19 @@ FORMULAS=(
 )
 
 FONTS=(
-  font-source-code-pro-for-powerline
+  font-sauce-code-powerline
   font-source-code-pro
   font-roboto
+  font-hack
 )
 
 CASKS=(
     java
     airfoil
-    alfred
     atom
     automatic
     ccleaner
     crashplan
-    dash
     dropbox
     firefox
     flux
@@ -83,15 +83,11 @@ CASKS=(
     qlstephen
     quicklook-csv
     quicklook-json
-    robomongo
-    skitch
     skype
     slack
     sourcetree
-    spectacle
     spotify
     steam
-    texmaker
     the-unarchiver
     transmission
     vagrant
