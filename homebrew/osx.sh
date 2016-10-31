@@ -51,7 +51,7 @@ FORMULAS=(
 )
 
 FONTS=(
-  font-sauce-code-powerline
+  font-source-code-pro-for-powerline
   font-source-code-pro
   font-roboto
   font-hack
@@ -77,7 +77,6 @@ CASKS=(
     music-manager
     osxfuse
     qlcolorcode
-    qlimagesize
     qlmarkdown
     qlprettypatch
     qlstephen
