@@ -117,6 +117,6 @@ brew linkapps macvim
 
 brew cleanup
 
-brew-cask cleanup
+brew cask cleanup
 
 exit
