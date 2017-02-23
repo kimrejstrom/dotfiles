@@ -1,8 +1,8 @@
 # Borrowed from https://github.com/matthewmccullough/dotfiles/
 
 [user]
-	name = Kim Rejström
-	email = mr.rejstrom@gmail.com
+	name = Rejstrom Kim
+	email = kim.rejstrom@tieto.com
 
 [color]
 # ui = true is a superset of all the more specific color options

@@ -28,7 +28,7 @@ alias gurl='curl --compressed'
 alias week='date +%V'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install -g npm@latest; npm update -g; gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install -g npm@latest; npm update -g; sudo gem update'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -81,6 +81,11 @@ alias badge="tput bel"
 
 # Redo as sudo
 alias fuck='sudo $(fc -ln -1)'
+
+# Docker
+function drmc() { docker rm $(docker ps -a -f status=exited -q); }
+function drmi() { docker rmi -f $(docker images -q -a -f dangling=true); }
+
 
 # ----------------- FUNCTIONS ------------------- #
 # toggle iTerm Dock icon
