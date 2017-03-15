@@ -12,8 +12,8 @@ ZSH_THEME="spaceship"
 DEFAULT_USER="rejstkim"
 
 # Base16 Shell
-BASE16_SHELL="$PROJECTS/my-dotfiles/zsh/base16-ocean.dark.sh"
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+# BASE16_SHELL="$PROJECTS/my-dotfiles/zsh/base16-ocean.dark.sh"
+# [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
 export ZSH_CUSTOM=$PROJECTS/my-dotfiles/zsh
 
@@ -50,7 +50,6 @@ export ZSH_CUSTOM=$PROJECTS/my-dotfiles/zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git brew colorize docker sublime node npm bower extract osx vagrant zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
