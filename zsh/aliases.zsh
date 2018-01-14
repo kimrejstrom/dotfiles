@@ -1,8 +1,6 @@
 # --- ALIASES --------------------------
 alias refresh='source ~/.zshrc; echo "Reloaded .zshrc."'
-alias artisan='php artisan'
 alias oo='open .'
-alias activity='hg activity --mode=gui'
 alias kwmon='brew services start kwm'
 alias kwmoff='brew services stop kwm'
 alias hist='history | grep'
@@ -14,10 +12,6 @@ alias vhalt="vagrant halt"
 alias vkill="vagrant destroy"
 alias vssh="vagrant ssh"
 
-# MySQL
-alias mysqlstart="/usr/local/bin/mysql.server start"
-alias mysqlstop="/usr/local/bin/mysql.server stop"
-
 alias cat="colorize"
 # ---- FANCY DOTFILES-IMPORTED ALIASES ----------------
 
@@ -28,7 +22,7 @@ alias gurl='curl --compressed'
 alias week='date +%V'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install -g npm@latest; npm update -g; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install -g npm@latest; npm update -g; gem update'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -82,7 +76,10 @@ alias badge="tput bel"
 # Redo as sudo
 alias fuck='sudo $(fc -ln -1)'
 
+alias autoenv='source /usr/local/opt/autoenv/activate.sh'
+
 # Docker
+alias dockdown="docker-compose down -v --remove-orphans"
 function drmc() { docker rm $(docker ps -a -f status=exited -q); }
 function drmi() { docker rmi -f $(docker images -q -a -f dangling=true); }
 
@@ -120,4 +117,11 @@ function weather() {
 
 setWallpaper() {
   sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '${1-}'" && killall Dock;
+}
+
+clearEnv() {
+  unset AWS_ACCESS_KEY_ID
+  unset AWS_SECRET_ACCESS_KEY
+  unset TF_VAR_email
+  unset TF_VAR_token
 }

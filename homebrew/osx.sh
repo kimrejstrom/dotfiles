@@ -31,19 +31,13 @@ FORMULAS=(
     autoconf
     automake
     caskroom/cask/brew-cask
-    composer
     coreutils
     htop
-    kwm
     lua
-    mercurial
-    mongodb
     mpv
-    mysql
     node
     openssl
     optipng
-    postgresql
     python
     screenfetch
     wget
@@ -52,6 +46,7 @@ FORMULAS=(
 
 FONTS=(
   font-source-code-pro-for-powerline
+  font-fira-code
   font-source-code-pro
   font-roboto
   font-hack
@@ -69,8 +64,6 @@ CASKS=(
     flux
     google-chrome
     google-drive
-    google-hangouts
-    google-photos-backup
     iterm2
     keepingyouawake
     liteicon
