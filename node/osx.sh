@@ -11,7 +11,7 @@
        printf "Installing Node.js packages..."
 
         # Install packages globally and quietly
-        npm install bower eclint editorconfig-tools eslint gify grunt-cli gulp ngrok yo --global --quiet
+        npm install eslint ngrok create-react-app --global --quiet
 
         printf "Done"
     fi

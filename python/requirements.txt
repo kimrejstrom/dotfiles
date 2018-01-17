@@ -1,5 +1,0 @@
-ansible
-distribute
-mercurial
-pygments
-virtualenvwrapper

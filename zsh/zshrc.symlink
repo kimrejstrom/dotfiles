@@ -69,19 +69,6 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# VirtualEnvs
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Development
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-source /usr/local/bin/virtualenvwrapper.sh
-
-# Python
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
 # Load Aliases
 [ -r "$PROJECTS/my-dotfiles/zsh/aliases.zsh" ] && source "$PROJECTS/my-dotfiles/zsh/aliases.zsh"
 
@@ -89,14 +76,7 @@ export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 . $HOME/.oh-my-zsh/plugins/z/z.sh
 
 # Locale settings
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-export NVM_DIR="/Users/rejstkim/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# export LC_ALL=en_US.UTF-8
+# export LANG=en_US.UTF-8
 
 source "/Users/rejstkim/Development/my-dotfiles/zsh/themes/spaceship.zsh-theme"

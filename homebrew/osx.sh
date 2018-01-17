@@ -28,19 +28,13 @@ TAPS=(
 )
 
 FORMULAS=(
-    autoconf
-    automake
     caskroom/cask/brew-cask
     coreutils
     htop
-    lua
-    mpv
     node
     openssl
-    optipng
     python
-    screenfetch
-    wget
+    neofetch
     zsh
 )
 
@@ -54,27 +48,12 @@ FONTS=(
 
 CASKS=(
     java
-    airfoil
-    atom
-    automatic
-    ccleaner
-    crashplan
     dropbox
     firefox
-    flux
     google-chrome
     google-drive
     iterm2
     keepingyouawake
-    liteicon
-    music-manager
-    osxfuse
-    qlcolorcode
-    qlmarkdown
-    qlprettypatch
-    qlstephen
-    quicklook-csv
-    quicklook-json
     skype
     slack
     sourcetree
@@ -82,12 +61,7 @@ CASKS=(
     steam
     the-unarchiver
     transmission
-    vagrant
-    virtualbox
     vlc
-    webpquicklook
-    xquartz
-    wireshark
 )
 
 for tap in ${TAPS[@]}
