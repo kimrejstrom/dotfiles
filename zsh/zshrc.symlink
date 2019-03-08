@@ -9,13 +9,13 @@ export PROJECTS=~/Development
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="spaceship"
-DEFAULT_USER="rejstkim"
+DEFAULT_USER="krej"
 
 # Base16 Shell
-# BASE16_SHELL="$PROJECTS/my-dotfiles/zsh/base16-ocean.dark.sh"
+# BASE16_SHELL="$PROJECTS/dotfiles/zsh/base16-ocean.dark.sh"
 # [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
-export ZSH_CUSTOM=$PROJECTS/my-dotfiles/zsh
+export ZSH_CUSTOM=$PROJECTS/dotfiles/zsh
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -50,7 +50,7 @@ export ZSH_CUSTOM=$PROJECTS/my-dotfiles/zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git brew colorize docker node npm extract osx zsh-syntax-highlighting)
+plugins=(git brew docker node npm extract osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,7 +70,7 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # Load Aliases
-[ -r "$PROJECTS/my-dotfiles/zsh/aliases.zsh" ] && source "$PROJECTS/my-dotfiles/zsh/aliases.zsh"
+[ -r "$PROJECTS/dotfiles/zsh/aliases.zsh" ] && source "$PROJECTS/dotfiles/zsh/aliases.zsh"
 
 # Enable z
 . $HOME/.oh-my-zsh/plugins/z/z.sh
@@ -79,4 +79,8 @@ fi
 # export LC_ALL=en_US.UTF-8
 # export LANG=en_US.UTF-8
 
-source "/Users/rejstkim/Development/my-dotfiles/zsh/themes/spaceship.zsh-theme"
+source $HOME/.cargo/env
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

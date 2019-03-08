@@ -1,8 +1,8 @@
 # Borrowed from https://github.com/matthewmccullough/dotfiles/
 
 [user]
-	name = Rejstrom Kim
-	email = kim.rejstrom@tieto.com
+	name = Kim Rejström
+	email = kim.rejstrom@futurice.com
 
 [color]
 # ui = true is a superset of all the more specific color options
@@ -31,7 +31,7 @@
   #untracked = cyan
 
 [core]
-	excludesfile = /Users/rejstkim/.gitignore_global
+	excludesfile = /Users/krej/.gitignore_global
   quotepath = false
   autocrlf = input
   safecrlf = warn
@@ -40,7 +40,7 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/kimrejstrom/.stCommitMsg
+	template = /Users/krej/.stCommitMsg

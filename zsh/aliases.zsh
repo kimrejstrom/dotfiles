@@ -1,16 +1,8 @@
 # --- ALIASES --------------------------
 alias refresh='source ~/.zshrc; echo "Reloaded .zshrc."'
 alias oo='open .'
-alias kwmon='brew services start kwm'
-alias kwmoff='brew services stop kwm'
 alias hist='history | grep'
-
-# Vagrant
-alias vup="vagrant up"
-alias vsus="vagrant suspend"
-alias vhalt="vagrant halt"
-alias vkill="vagrant destroy"
-alias vssh="vagrant ssh"
+alias cat='ccat'
 
 # ---- FANCY DOTFILES-IMPORTED ALIASES ----------------
 
@@ -75,8 +67,6 @@ alias badge="tput bel"
 # Redo as sudo
 alias fuck='sudo $(fc -ln -1)'
 
-alias autoenv='source /usr/local/opt/autoenv/activate.sh'
-
 # Docker
 alias dockdown="docker-compose down -v --remove-orphans"
 function drmc() { docker rm $(docker ps -a -f status=exited -q); }
@@ -112,15 +102,4 @@ function toggleiTerm() {
 
 function weather() {
   curl "http://wttr.in/${1-}";
-}
-
-setWallpaper() {
-  sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '${1-}'" && killall Dock;
-}
-
-clearEnv() {
-  unset AWS_ACCESS_KEY_ID
-  unset AWS_SECRET_ACCESS_KEY
-  unset TF_VAR_email
-  unset TF_VAR_token
 }

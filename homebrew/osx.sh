@@ -19,21 +19,13 @@ cd "$(dirname "$0")"
 # homebrew packages
 
 TAPS=(
-    homebrew/binary
-    homebrew/dupes
-    homebrew/versions
     caskroom/cask
     caskroom/versions
     caskroom/fonts
 )
 
 FORMULAS=(
-    caskroom/cask/brew-cask
-    coreutils
-    htop
     node
-    openssl
-    python
     neofetch
     zsh
 )
@@ -49,17 +41,10 @@ FONTS=(
 CASKS=(
     java
     dropbox
-    firefox
-    google-chrome
-    google-drive
     iterm2
     keepingyouawake
-    skype
-    slack
     sourcetree
     spotify
-    steam
-    the-unarchiver
     transmission
     vlc
 )
