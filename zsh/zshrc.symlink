@@ -48,6 +48,10 @@ export ZSH_CUSTOM=$PROJECTS/dotfiles/zsh
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
 
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(git brew docker node npm extract osx)
@@ -63,7 +67,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-   export EDITOR='mvim'
+  export EDITOR='mvim'
 fi
 
 # Compilation flags
@@ -82,5 +86,17 @@ fi
 source $HOME/.cargo/env
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+###############
+# Java Switcher
+###############
+alias j13="export JAVA_HOME=$(/usr/libexec/java_home -v 13); java -version"
+
+# Set java 8 as default
+export JAVA_HOME=$(/usr/libexec/java_home -v 13)
+
+alias event-analyzer="NODE_PATH=/Users/krej/Development/fiba-3x3-scores /Users/krej/Development/fiba-3x3-scores/node_modules/.bin/ts-node /Users/krej/Development/fiba-3x3-scores/contrib/event-analyzer/event-analyzer"
+
+eval "$(direnv hook zsh)"
