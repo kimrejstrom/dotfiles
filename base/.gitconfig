@@ -2,7 +2,7 @@
 
 [user]
 	name = Kim Rejstrom
-	email = kim.rejstrom@futurice.com
+	email = mr.rejstrom@gmail.com
 
 [color]
 # ui = true is a superset of all the more specific color options
@@ -31,11 +31,11 @@
   #untracked = cyan
 
 [core]
-	excludesfile = /Users/krej/.gitignore_global
-  quotepath = false
-  autocrlf = input
-  safecrlf = warn
-  editor = vim
+    excludesfile = /Users/TODO/.gitignore_global
+    quotepath = false
+    autocrlf = input
+    safecrlf = warn
+    editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -43,4 +43,4 @@
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/krej/.stCommitMsg
+	template = /Users/TODO/.stCommitMsg

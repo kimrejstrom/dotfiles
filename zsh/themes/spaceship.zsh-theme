@@ -1,1 +1,0 @@
-/Users/krej/Development/dotfiles/zsh/themes/spaceship-prompt/spaceship.zsh-theme
